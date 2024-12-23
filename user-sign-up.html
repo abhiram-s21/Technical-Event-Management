@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Management System - Signup</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+    }
+    .container {
+      width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], input[type="password"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50; /* Green */
+      color: white;
+      padding: 10px 20px;
+      margin: 0 auto; /* Center the button */
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      display: block; /* Make it a block element to center */
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .chart, .back {
+      background-color: #2196F3; /* Blue */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="chart">Chart</button>
+    <button class="back">Back</button>
+
+    <h2>Event Management System</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="User" readonly>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="User" readonly>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" value="User" readonly>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>

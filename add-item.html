@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vendor Dashboard</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .container {
+      width: 800px; /* Adjusted width */
+      margin: 50px auto;
+      background-color: #2196F3;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+    h2 {
+      text-align: left; /* Aligned to the left */
+      margin-bottom: 20px;
+    }
+    .section {
+      float: left; /* Float sections to be side by side */
+      width: 48%; /* Adjust width as needed */
+      margin-right: 2%; /* Add space between sections */
+    }
+    .product-status {
+      margin-bottom: 20px; /* Add space below product status */
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], input[type="number"] { /* Added input type number */
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #0D47A1;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px; /* Added margin top */
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .top-buttons button {
+      margin: 0 10px; /* Space between top buttons */
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome 'Vendor Name'</h2>
+    <div class="top-buttons">
+      <button>Product Status</button>
+      <button>Request Item</button>
+      <button>View Product</button>
+      <button>Log Out</button>
+    </div>
+    <div class="section">
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName">
+
+      <label for="productPrice">Product Price:</label>
+      <input type="number" id="productPrice" name="productPrice">
+
+      <label for="productImage">Product Image:</label>
+      <input type="text" id="productImage" name="productImage">
+
+      <button>Add The Peoduct</button> 
+    </div>
+
+    <div class="section product-status">
+      <div>
+        <label>Product Image:</label>
+        <input type="text" readonly> 
+      </div>
+      <div>
+        <label>Product Name:</label>
+        <input type="text" readonly>
+      </div>
+      <div>
+        <label>Product Price:</label>
+        <input type="text" readonly>
+      </div>
+      <div>
+        <label>Action:</label><br>
+        <button>Delete</button>
+        <button>Update</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

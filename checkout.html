@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+    }
+    .container {
+      width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .section {
+      float: left;
+      width: 48%;
+      margin-right: 2%;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50; /* Green */
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      display: block;
+      width: auto;
+      margin-left: auto;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .total {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Checkout</h2>
+    <div class="total">
+      Base Grand Total: 200/-
+    </div>
+
+    <div class="section">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address">
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city">
+    </div>
+
+    <div class="section">
+      <label for="number">Number:</label>
+      <input type="number" id="number" name="number">
+
+      <label for="paymentMethod">Payment Method:</label>
+      <select id="paymentMethod" name="paymentMethod">
+        <option value="cash">Cash</option>
+        <option value="upi">UPI</option>
+      </select>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state">
+
+      <label for="pinCode">Pin Code:</label>
+      <input type="number" id="pinCode" name="pinCode">
+    </div>
+
+    <button>Order Now</button>
+  </div>
+</body>
+</html>
